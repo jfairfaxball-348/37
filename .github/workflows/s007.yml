@@ -1,0 +1,58 @@
+name: S007 frozen 37 irregularity certificate (one job only)
+
+on:
+  push:
+    branches:
+      - research/s007-congruence-bridge
+
+permissions:
+  contents: write
+
+jobs:
+  s007-exact:
+    if: startsWith(github.event.head_commit.message, 'freeze(s007):')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin source and environment
+        run: |
+          echo "S007_SHASOURCE=$GITHUB_SHA S007_RUN=$GITHUB_RUN_ID"
+          git rev-parse HEAD
+          python3 --version
+      - name: Structural, Markdown, whitespace and all unit checks
+        run: |
+          python3 scripts/check_scaffold.py
+          python3 -m unittest discover -s tests -v
+          git diff --check
+          git show --check --oneline HEAD
+      - name: One frozen S007 37-only-motivated exact pilot
+        run: |
+          python3 scripts/s007_irregular37.py --output out/S007_37_exact.json
+          cat out/S007_37_exact.json
+          sha256sum out/S007_37_exact.json
+      - name: Archive complete tiny pilot output to branch
+        run: |
+          mkdir -p research/data
+          cp out/S007_37_exact.json research/data/S007_37_exact.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/data/S007_37_exact.json
+          if git diff --cached --quiet; then
+            echo "Exact S007 archive already matches"
+          else
+            git commit -m "data(s007): preserve known 37-adic harmonic certificate"
+            git push
+          fi
+      - name: Upload exact verified S007 archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: s007-37-known-harmonic-certificate
+          path: out/S007_37_exact.json
+          retention-days: 90
