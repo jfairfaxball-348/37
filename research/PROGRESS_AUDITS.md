@@ -4,3 +4,5 @@
 
 Audit topics: mathematical gain beyond known facts, number of leads immediately subsumed by prior art, controls/holdouts and selection bias, compute value versus cost, proof/Lean readiness, publication significance, and whether to pivot. Do not retroactively change session history or represent a tool as a discovery.
 
+
+**S001 progress note (not the S005 mandatory audit):** 1/5 substantive sessions completed. One bounded exhaustive experiment and four immediate novelty screens; zero candidate discoveries; first algebraic direction parked promptly. Do not mistake completed compute for mathematical progress. Mandatory comprehensive progress/correction audit remains due by S005 or earlier if further lines collapse.
