@@ -1,0 +1,66 @@
+name: S002 complete p-square lifting and independent oracle
+on:
+  push:
+    branches:
+      - research/s002-prime-power
+  pull_request:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  s002:
+    if: github.ref == 'refs/heads/research/s002-prime-power' || github.head_ref == 'research/s002-prime-power'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Record environment and exact input commit
+        run: |
+          echo "run=$GITHUB_RUN_ID job=$GITHUB_JOB sha=$GITHUB_SHA runner=$RUNNER_OS arch=$RUNNER_ARCH"
+          python3 --version
+          git rev-parse HEAD
+      - name: Scaffold, all arithmetic tests, whitespace
+        run: |
+          python3 scripts/check_scaffold.py
+          python3 -m unittest discover -s tests -v
+          git diff --check
+      - name: Predeclared S002 exact level-1-and-2 full-window sweep
+        run: python3 -m scripts.s002_enumerate --output out/s002_full.json
+      - name: Full independent modular and repunit recurrence oracle
+        run: |
+          python3 -m scripts.s002_validate --input out/s002_full.json --manifest out/s002_manifest.json --archive out/s002_full.json.gz
+          sha256sum out/s002_full.json out/s002_full.json.gz out/s002_manifest.json
+      - name: Compare durable data with exact PR replay
+        if: github.event_name == 'pull_request'
+        run: |
+          cmp out/s002_full.json.gz research/data/S002_full.json.gz
+          cmp out/s002_manifest.json research/data/S002_manifest.json
+      - name: Preserve full deterministic experiment in git on branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/research/s002-prime-power'
+        run: |
+          cp out/s002_full.json.gz research/data/S002_full.json.gz
+          cp out/s002_manifest.json research/data/S002_manifest.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/data/S002_full.json.gz research/data/S002_manifest.json
+          if git diff --cached --quiet; then
+            echo "S002 idempotent replay matched tracked archive"
+          else
+            git commit -m "data(s002): preserve complete exact checked p-square sweep"
+            git push
+          fi
+      - name: Upload complete JSON, archive and manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: s002-prime-power-exact
+          path: |
+            out/s002_full.json
+            out/s002_full.json.gz
+            out/s002_manifest.json
+          retention-days: 90
