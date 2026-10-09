@@ -1,0 +1,144 @@
+{
+  "bernoulli_32": {
+    "denominator": 510,
+    "numerator": -7709321041217,
+    "v37_numerator": 1
+  },
+  "frozen_powers": [
+    2,
+    4,
+    6
+  ],
+  "frozen_primes": [
+    31,
+    37,
+    41,
+    43,
+    59,
+    67
+  ],
+  "gate": "EXPERIMENTAL_CLASSICAL_NO_N1",
+  "independent_methods": [
+    "direct modular inverse sum",
+    "exact Fraction numerator/denominator reduction"
+  ],
+  "meaning_of_37": "first irregular prime: (37,32), 32=37-5",
+  "novelty_warning": "Glaisher 1900/1901; Kellner 2007; Hart-Harvey-Ong 2017; OEIS A397134. Known phenomenon; no original theorem.",
+  "rows": [
+    {
+      "mod_p2": 930,
+      "mod_p3": 13423,
+      "p": 31,
+      "power": 2
+    },
+    {
+      "mod_p2": 775,
+      "mod_p3": 11346,
+      "p": 31,
+      "power": 4
+    },
+    {
+      "mod_p2": 372,
+      "mod_p3": 23436,
+      "p": 31,
+      "power": 6
+    },
+    {
+      "mod_p2": 962,
+      "mod_p3": 14652,
+      "p": 37,
+      "power": 2
+    },
+    {
+      "mod_p2": 0,
+      "mod_p3": 8214,
+      "p": 37,
+      "power": 4
+    },
+    {
+      "mod_p2": 259,
+      "mod_p3": 16687,
+      "p": 37,
+      "power": 6
+    },
+    {
+      "mod_p2": 287,
+      "mod_p3": 62484,
+      "p": 41,
+      "power": 2
+    },
+    {
+      "mod_p2": 943,
+      "mod_p3": 58097,
+      "p": 41,
+      "power": 4
+    },
+    {
+      "mod_p2": 943,
+      "mod_p3": 49692,
+      "p": 41,
+      "power": 6
+    },
+    {
+      "mod_p2": 430,
+      "mod_p3": 17071,
+      "p": 43,
+      "power": 2
+    },
+    {
+      "mod_p2": 1118,
+      "mod_p3": 38098,
+      "p": 43,
+      "power": 4
+    },
+    {
+      "mod_p2": 1763,
+      "mod_p3": 29498,
+      "p": 43,
+      "power": 6
+    },
+    {
+      "mod_p2": 59,
+      "mod_p3": 163666,
+      "p": 59,
+      "power": 2
+    },
+    {
+      "mod_p2": 2655,
+      "mod_p3": 79237,
+      "p": 59,
+      "power": 4
+    },
+    {
+      "mod_p2": 236,
+      "mod_p3": 202134,
+      "p": 59,
+      "power": 6
+    },
+    {
+      "mod_p2": 2881,
+      "mod_p3": 254265,
+      "p": 67,
+      "power": 2
+    },
+    {
+      "mod_p2": 1206,
+      "mod_p3": 10184,
+      "p": 67,
+      "power": 4
+    },
+    {
+      "mod_p2": 1809,
+      "mod_p3": 28743,
+      "p": 67,
+      "power": 6
+    }
+  ],
+  "rows_sha256": "e1fd21172e7c92b7c75dd0c914459dc0bab2a815923eb94017e0387f693bc40d",
+  "session": "S007",
+  "target_h4_37": {
+    "mod_37_cubed": 8214,
+    "mod_37_squared": 0,
+    "normalized_mod_37": 6
+  }
+}
