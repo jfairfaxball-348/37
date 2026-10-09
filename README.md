@@ -1,3 +1,9 @@
+# Current status — S010 complete, 2026-10-09: NOT_NOVEL / HUMAN DECISION STOP
+
+The [mandatory tenth-session audit](research/PROGRESS_AUDITS.md) and [S010 source-first kill report](research/sessions/S010.md) found that Jeon's [published full-X0(N) cubic-point classification (2021)](https://doi.org/10.1016/j.jnt.2020.09.006) already establishes the isolation of every genuine degree-three point on **X0(74)**. The proposed j=-9317 exceptional 37-isogeny lift **Q37-ISO-74 is NOT_NOVEL**; independent cubic field-of-moduli proof was not attempted, as mandated by the source-first kill. **Ten research sessions S001–S010: zero proved original project theorems, zero N1 passes, zero active candidates. STOP_CURRENT_PROGRAMME / HUMAN_DECISION_REQUIRED.** S007 p37 harmonic is classical; S008 no viable class-field certificate is **not impossibility**. The [S010 instruction was archived verbatim before replacement](research/prompts/S010_INPUT.md), and the [full S011 human-choice handoff](research/NEXT_SESSION.md) authorizes no S011 mathematics. No external outreach or scholarly submission.
+
+---
+
 # 37 — computational and algebraic mathematics research
 
 **S005 first mandatory fifth-session audit COMPLETE, 9 October 2026: PIVOT / NO VIABLE TARGET.** Four earlier extensive and independently software-checked investigations S001–S004 all found NO SURVIVOR / PIVOT; **zero original theorems, zero N1 finalists, zero Lean/Palomar/submissions**. The 37-centred input-first method is PARKED and 37 is now an optional illustration only. S005 screened rank-two zero-sum stability and prime-modulus squarefree distribution, five primary comparators per question, with no justified tractable novelty survivor. [Read the 5/5 audit](research/sessions/S005.md), [full progress correction](research/PROGRESS_AUDITS.md), and [the S006 source-first contract](research/NEXT_SESSION.md). S006 has NOT been executed.
