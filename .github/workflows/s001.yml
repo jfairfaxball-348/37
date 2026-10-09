@@ -1,0 +1,71 @@
+name: S001 complete finite-field sweep and independent oracle
+
+on:
+  push:
+    branches:
+      - research/s001-enumeration
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  s001:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Record environment
+        run: |
+          echo "commit=$GITHUB_SHA runner=$RUNNER_OS arch=$RUNNER_ARCH"
+          python3 --version
+          git rev-parse HEAD
+      - name: Integrity and all unit tests
+        run: |
+          python3 scripts/check_scaffold.py
+          python3 -m unittest discover -s tests -v
+          git diff --check
+      - name: Preregistered S001 deep enumeration (exact)
+        run: |
+          python3 scripts/enumerate.py --primes 31,37,41,43 --base-min 2 --base-max 2000 --output out/s001_full.json
+      - name: Independent full recurrence and cyclotomic audit
+        run: |
+          python3 scripts/s001_validate.py --input out/s001_full.json --output out/s001_manifest.json --archive out/s001_full.json.gz
+          sha256sum out/s001_full.json out/s001_full.json.gz out/s001_manifest.json
+      - name: Compare durable tracked inputs with replay (PR)
+        if: github.event_name == 'pull_request'
+        run: |
+          cmp out/s001_full.json.gz research/data/S001_full.json.gz
+          cmp out/s001_manifest.json research/data/S001_manifest.json
+      - name: Archive exact full output to S001 branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/research/s001-enumeration'
+        run: |
+          mkdir -p research/data
+          cp out/s001_full.json.gz research/data/S001_full.json.gz
+          cp out/s001_manifest.json research/data/S001_manifest.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/data/S001_full.json.gz research/data/S001_manifest.json
+          if git diff --cached --quiet; then
+            echo "Archive unchanged: idempotent replay verified"
+          else
+            git commit -m "data(s001): archive deterministic full bounded enumeration"
+            git push
+          fi
+      - name: Upload full raw data and machine-checked manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: s001-exact-enumeration
+          path: |
+            out/s001_full.json
+            out/s001_full.json.gz
+            out/s001_manifest.json
+          retention-days: 90

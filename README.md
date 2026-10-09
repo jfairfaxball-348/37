@@ -1,6 +1,6 @@
 # 37 — computational and algebraic mathematics research
 
-**Stage P0 complete: research infrastructure bootstrapped, 9 October 2026. No original theorem, novelty certification, formal proof, registration, preprint or publication is claimed.**
+**S001 complete, 9 October 2026: exact finite-field order/repunit sweep (7,784 valid rows) and independent GitHub Actions checks. All observations are standard group/cyclotomic theory: NO SURVIVOR / PIVOT. No original theorem, novelty certification, formal proof, registry, preprint or journal publication is claimed.**
 
 This project uses **37 as an exploratory seed** for rigorous research in modular arithmetic, multiplicative orders, repunits, cyclotomic factors, finite-field structure and related integer sequences. It is deliberately not committed to any claim that 37 is exceptional. The research question is *which, if any, apparently distinctive observations survive base changes, control primes, algebraic explanation and a substantive novelty audit?* Widen the mathematical direction when evidence justifies it.
 
@@ -19,6 +19,10 @@ The [current state](research/STATE.json), [research process](docs/RESEARCH_PIPEL
 ## Known starting point (not an original discovery)
 
 For decimal base 10, `111 = 3 × 37`, `Φ₃(10) = 10² + 10 + 1 = 111`, `ord₃₇(10)=3`, and `1/37 = 0.027027…`. These are standard repunit/multiplicative-order facts. In particular, a visually striking decimal string is *not* a new result. See the [baseline prior-art screen](research/NOVELTY_LEDGER.md) and the [OEIS entry on repunit divisibility](https://oeis.org/A172372).
+
+## S001 exact archive and evidence
+
+Read the [S001 report](research/sessions/S001.md), [checked manifest](research/data/S001_manifest.json) and [durable full JSON archive](research/data/S001_full.json.gz) (gzip, decompress to recover unfiltered source JSON). GitHub Actions [deep run 37921994616](https://github.com/jfairfaxball-348/37/actions/runs/37921994616) validated every output row independently. The current [S002 prompt](research/NEXT_SESSION.md) pivots into prime-power lifting and valuations; classical lifting is not itself a novelty claim.
 
 ## Reproduce enumeration
 
