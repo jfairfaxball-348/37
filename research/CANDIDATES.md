@@ -41,3 +41,8 @@ There are **zero** active original mathematical candidates. S002 is authorized t
 ## S007 — explicit 37-only recharter (2026-10-09)
 - **DIR-11 (COMPLETED EXPLORATORY, NOT_NOVEL):** the quartic harmonic `37²` divisibility at p=37 reflects the known first irregular pair (37,32), not a general new result; exact p³ 8214 and five nonvanishing frozen control primes recorded in [S007](sessions/S007.md).
 - **DIR-12 (S008 SOURCE-FIRST FEASIBILITY, NOT an N1 candidate):** for `K=Q(ζ37)`, seek a strictly improved **independently checkable compressed Kummer generator certificate** for its known unramified degree-37 extension, with original Kummer formula and 2025 polynomial as direct competitors. Require local p37 ramification verification and predeclared metric. **NO original theorem, NO N1 finalist; research ACTIVE only because user expressly demanded 37-specific continuation.**
+
+
+## S008 — DIR-12 closure
+- **DIR-12 PARKED / NO_VIABLE_37_CLASSFIELD_CERTIFICATE_YET:** 2010 Kummer unit formula and 2025 PARI polynomial are direct prior art. No validated size/verification-cost improvement or independent wild-prime local certificate; one predeclared conditional plan [S008 frozen](sessions/S008_FROZEN.md) was NOT executed. Zero original candidate/N1.
+- **DIR-13 NOT A MATHEMATICAL CANDIDATE:** S009 is the specific human choice of 37-only *known-maths independent verification* vs human-directed distinct original research question vs pause. No implicit scientific authorization.

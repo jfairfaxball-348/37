@@ -52,3 +52,9 @@
 - **BG-S007-01 / BACKGROUND/NOT_NOVEL:** `(37,32)` is the first Kummer irregular pair, `32=37−5`; p=37 is intrinsic, not a convenience. [S007](sessions/S007.md).
 - **EXP-S007-01 / EXACT FINITE/NOT_NOVEL:** `H_4(37)=Σ_{k=1}^{36}k^{-4}` has residue `0 mod37²` and `8214=6·37² mod37³`, proved as an exact arithmetic certificate with independent rational and modular methods; Glaisher's congruence subsumes mod37². [Archive](data/S007_37_exact.json).
 - **SCREEN-S007-02 / NO N1:** existing Kummer unit and 2025 PARI polynomial for a degree-37 unramified extension of Q(ζ37) leave only a possible *new compressed independently verifiable certificate*, not an original existence theorem. **Zero original claims/zero N1 remain.**
+
+
+## S008 — source-first certificate feasibility, no novel mathematical claim
+- **SCREEN-S008-01 / NOT_NOVEL:** balanced-residue exponents in the explicit 2010 Kummer cyclotomic-unit product yield the same 37th-power class; it is algebraic reformulation, not a new first generator. [S008](sessions/S008.md).
+- **SCREEN-S008-02 / NOT ESTABLISHED:** exact 37-adic local `pi^73` witness, non-37th-power finite-field witness and strictly smaller/cheaper baseline comparisons were **not produced**; no experiment, no N1 candidate. Published Gras §4.4 states `h(K)=37`, not independently verified by project.
+**All original mathematical claims NONE; S007 classical harmonic record preserved.**
