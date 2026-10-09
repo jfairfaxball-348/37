@@ -1,0 +1,66 @@
+name: S003 frozen cubic characters and exact Jacobi oracle
+on:
+  push:
+    branches: [research/s003-cubic-jacobi]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  s003-exact:
+    if: github.ref == 'refs/heads/research/s003-cubic-jacobi' || github.head_ref == 'research/s003-cubic-jacobi'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Freeze environment, source SHA and execution identity
+        run: |
+          echo "run=$GITHUB_RUN_ID sha=$GITHUB_SHA job=$GITHUB_JOB runner=$RUNNER_OS architecture=$RUNNER_ARCH"
+          python3 --version
+          git rev-parse HEAD
+      - name: Scaffold, complete tests, committed diff and local Markdown links
+        run: |
+          python3 scripts/check_scaffold.py
+          python3 -m unittest discover -s tests -v
+          git diff --check
+          git show --check --oneline HEAD
+          git diff --check origin/main...HEAD
+      - name: ONE frozen exact S003 experiment
+        run: python3 -m scripts.s003_cubic --output out/s003_full.json
+      - name: Independent exact oracle and hash verification
+        run: |
+          python3 -m scripts.s003_validate --folder out
+          sha256sum out/s003_full.json out/s003_full.json.gz out/s003_manifest.json
+      - name: Compare committed durable archive on PR
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 -m scripts.s003_validate --folder out --tracked research/data
+      - name: Preserve deterministic complete archive on research branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/research/s003-cubic-jacobi'
+        run: |
+          cp out/s003_full.json.gz research/data/S003_full.json.gz
+          cp out/s003_manifest.json research/data/S003_manifest.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/data/S003_full.json.gz research/data/S003_manifest.json
+          if git diff --cached --quiet; then
+            echo "S003 deterministic exact archive already tracked"
+          else
+            git commit -m "data(s003): archive independently verified cubic-character tables"
+            git push
+          fi
+      - name: Upload all exact data and checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: s003-cubic-jacobi-exact
+          path: |
+            out/s003_full.json
+            out/s003_full.json.gz
+            out/s003_manifest.json
+          retention-days: 90
