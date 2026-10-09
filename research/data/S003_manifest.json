@@ -1,0 +1,27 @@
+{
+  "config": {
+    "arithmetic": "integer Eisenstein coefficient pairs; exact cyclotomic convolution",
+    "fixed_inputs": "all x in F_p for each preregistered p; no adaptive additions",
+    "normalization": "least positive primitive root g; chi(g**k)=omega**(k mod 3); chi(0)=0; omega**2=-1-omega",
+    "primes": [
+      31,
+      37,
+      41,
+      43
+    ],
+    "probes": [
+      2,
+      3,
+      10
+    ]
+  },
+  "gate": "EXPERIMENTAL_ONLY_NO_N1",
+  "gzip_bytes": 1169,
+  "gzip_sha256": "ebea4666361075eb843a48fad294c635836e8a9ad6fb5fce54219c112792e5f2",
+  "json_bytes": 7096,
+  "json_sha256": "9465a842e86d1874aec1b2eea1268354c9d80e741de498da351b3c92f50a5621",
+  "oracle": "independent cube-subgroup cosets, x+y=1 pair counts, additive period convolution; exact classical polynomial checks",
+  "row_count": 4,
+  "rows_sha256": "c8a277caf73c9ce3df584ae2a2f37d29f128963ce06e3e804c60f93ea131e08d",
+  "session": "S003"
+}
