@@ -36,3 +36,8 @@
 - **EXP-S004-01 / EXPERIMENTAL:** All 32560 anchored four-subsets across four frozen primes: sumset/restricted/difference/energy/coarse-orbit profiles, independently recomputed exact; five profiles, full [archive](data/S004_full.json.gz) and [manifest](data/S004_manifest.json). No original unbounded theorem or N1.
 - **EXP-S004-02 / EXPERIMENTAL/NEGATIVE:** p=37 A={0,1,3,4} gives restricted size 5 without being AP; at restricted size 6 energy is not unique. Duplicate affine orbits explicitly weighted. 37 does not distinguish a unique extremal profile across controls. [NA-011–013](NOVELTY_LEDGER.md).
 **S004 original claims: NONE; N1 finalist: NONE.**
+
+## S005 mandatory correction — no new mathematical claims
+- **AUDIT-S005-01 (administrative):** S001–S004 gave four negative mathematical gates; 13 contemporaneous novelty-screen identifiers NA-001–013, 0 original theorems, 0 N1 finalists; five-session audit published. Counts and CI are technical provenance, NOT scientific discovery.
+- **SCREEN-S005-01/02 (UNCERTAIN / PARKED):** exact literature-led *questions* about length 2p-3 zero-sum-free multiplicity in (Z/pZ)^2 and uniform squarefree prime-progressions; neither is called open/proved/refuted and neither enters the claims/theorem pipeline. [S005](sessions/S005.md), [NA-014/015](NOVELTY_LEDGER.md).
+**Original claims remain NONE; p=37 only optional example.**
