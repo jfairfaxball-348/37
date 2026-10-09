@@ -37,3 +37,7 @@ There are **zero** active original mathematical candidates. S002 is authorized t
 ## S006 close — stop gate, 2026-10-09
 - **DIR-10 CLOSED / NO VIABLE TARGET:** two literature-only primitive binary quadratic form / class group screens with 12 unique primary papers; first naive local-to-individual form statement refuted by classical Δ=−23 case, second prime-representation set uniqueness is standard class-field territory with strong 2025 comparators and incomplete exact full-paper access.
 - **No DIR-11 selected, no original candidate or N1 proposal. STOP_CURRENT_PROGRAMME.** Recharter only at human direction; [terminal handoff](NEXT_SESSION.md). S001–S005 historical decisions unchanged.
+
+## S007 — explicit 37-only recharter (2026-10-09)
+- **DIR-11 (COMPLETED EXPLORATORY, NOT_NOVEL):** the quartic harmonic `37²` divisibility at p=37 reflects the known first irregular pair (37,32), not a general new result; exact p³ 8214 and five nonvanishing frozen control primes recorded in [S007](sessions/S007.md).
+- **DIR-12 (S008 SOURCE-FIRST FEASIBILITY, NOT an N1 candidate):** for `K=Q(ζ37)`, seek a strictly improved **independently checkable compressed Kummer generator certificate** for its known unramified degree-37 extension, with original Kummer formula and 2025 polynomial as direct competitors. Require local p37 ramification verification and predeclared metric. **NO original theorem, NO N1 finalist; research ACTIVE only because user expressly demanded 37-specific continuation.**
