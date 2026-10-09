@@ -6,3 +6,5 @@ Audit topics: mathematical gain beyond known facts, number of leads immediately 
 
 
 **S001 progress note (not the S005 mandatory audit):** 1/5 substantive sessions completed. One bounded exhaustive experiment and four immediate novelty screens; zero candidate discoveries; first algebraic direction parked promptly. Do not mistake completed compute for mathematical progress. Mandatory comprehensive progress/correction audit remains due by S005 or earlier if further lines collapse.
+
+**S002 early correction note:** 2/5 substantive sessions complete, both with exact bounded data and **zero novel survivors**. The finite-field and prime-power/valuation paths both collapsed to standard theory despite rigorous independent checks; stop merely enlarging p-adic tables. Pivot to genuinely different higher-character algebra in S003; prescreen specialist books/primary papers before selecting targets. Formal comprehensive audit remains due at S005 or earlier if failures continue.

@@ -1,6 +1,6 @@
 # 37 — computational and algebraic mathematics research
 
-**S001 complete, 9 October 2026: exact finite-field order/repunit sweep (7,784 valid rows) and independent GitHub Actions checks. All observations are standard group/cyclotomic theory: NO SURVIVOR / PIVOT. No original theorem, novelty certification, formal proof, registry, preprint or journal publication is claimed.**
+**S002 complete, 9 October 2026: prime-square lifting and cyclotomic/repunit valuation sweep (7,784 valid rows), independent full GitHub Actions verification. Every observed pattern is explained by classical LTE/Hensel/Fermat quotient theory: NO SURVIVOR / PIVOT. S001 also had NO SURVIVOR / PIVOT. No original theorem, novelty certification, formal proof, registry, preprint or journal publication is claimed.**
 
 This project uses **37 as an exploratory seed** for rigorous research in modular arithmetic, multiplicative orders, repunits, cyclotomic factors, finite-field structure and related integer sequences. It is deliberately not committed to any claim that 37 is exceptional. The research question is *which, if any, apparently distinctive observations survive base changes, control primes, algebraic explanation and a substantive novelty audit?* Widen the mathematical direction when evidence justifies it.
 
@@ -24,6 +24,10 @@ For decimal base 10, `111 = 3 × 37`, `Φ₃(10) = 10² + 10 + 1 = 111`, `ord₃
 
 Read the [S001 report](research/sessions/S001.md), [checked manifest](research/data/S001_manifest.json) and [durable full JSON archive](research/data/S001_full.json.gz) (gzip, decompress to recover unfiltered source JSON). GitHub Actions [deep run 37921994616](https://github.com/jfairfaxball-348/37/actions/runs/37921994616) validated every output row independently. The current [S002 prompt](research/NEXT_SESSION.md) pivots into prime-power lifting and valuations; classical lifting is not itself a novelty claim.
 
+## S002 complete prime-power archive and evidence
+
+Read the [S002 report](research/sessions/S002.md), the [independently checked S002 manifest](research/data/S002_manifest.json), and full exact [S002 compressed JSON](research/data/S002_full.json.gz). GitHub Actions [full S002 run 37926530437](https://github.com/jfairfaxball-348/37/actions/runs/37926530437) checked every p-square row independently and uploaded artifact 11613668670. The current [S003 prompt](research/NEXT_SESSION.md) pivots to cubic characters and Jacobi sums; classical character-sum identities are not automatically novel.
+
 ## Reproduce enumeration
 
 Requires only Python 3.11+ (standard library).
@@ -32,6 +36,13 @@ Requires only Python 3.11+ (standard library).
 python3 scripts/check_scaffold.py
 python3 -m unittest discover -s tests -v
 python3 scripts/enumerate.py --primes 31,37,41,43 --base-min 2 --base-max 200 --output out/baseline.json
+```
+
+S002 prime-power replay:
+
+```bash
+python3 -m scripts.s002_enumerate --output out/s002_full.json
+python3 -m scripts.s002_validate --input out/s002_full.json --manifest out/s002_manifest.json --archive out/s002_full.json.gz
 ```
 
 The machine-readable output records precise configuration, rows, sample counts, and a SHA-256 of canonical row data. It enumerates multiplicative orders and least repunit lengths for valid prime/base pairs. The routine is a **measurement instrument**, not proof, novelty detection or an original result. Read [design and limits](docs/ENUMERATION_DESIGN.md).

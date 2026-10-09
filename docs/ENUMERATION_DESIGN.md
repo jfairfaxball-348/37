@@ -25,3 +25,6 @@ Run `python3 scripts/enumerate.py --help`. The exact engine validates primes by 
 
 GitHub Actions `research.yml` always executes checks and a bounded enumeration, with `workflow_dispatch` arguments for deeper sweeps; its compute never substitutes for proof or prior-art work.
 
+
+## S002 additional instrument (prime squares, not a new theorem)
+The frozen prime-square study [S002](../research/sessions/S002.md) retains every coprime (p,b) row with ord_p, ord_(p²), v_p(b^d−1), v_p(Phi_d(b)), first p and p² repunit-divisible lengths, q_p(b) mod p and exceptional-lift flag; excluded p|b rows are explicit. Independent verification uses direct recurrences for **all** rows and successive-modulus valuation, rather than the engine's order routine. All p² unit residues are covered for 31,37,41,43 because p²<2000; occurrence rows in a base interval are not independent trials. Both source and full replay archive are in git, plus Actions artifact. S002's unique lifts and valuation formulas are NOT_NOVEL classical theory. No p³ holdout was performed.
