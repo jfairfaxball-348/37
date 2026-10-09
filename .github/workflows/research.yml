@@ -1,0 +1,46 @@
+name: Research checks and bounded enumeration
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      primes:
+        description: Comma-separated prime moduli (must pass source guardrails)
+        required: false
+        type: string
+        default: '31,37,41,43'
+      base_max:
+        description: Maximum base (2..100000; at most 500000 pairs)
+        required: false
+        type: number
+        default: 200
+
+permissions:
+  contents: read
+
+jobs:
+  verify-and-enumerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PRIMES: ${{ inputs.primes || '31,37,41,43' }}
+      BASE_MAX: ${{ inputs.base_max || 200 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Structural checks
+        run: python3 scripts/check_scaffold.py
+      - name: Independent arithmetic unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Exact enumeration
+        run: python3 scripts/enumerate.py --primes "$PRIMES" --base-min 2 --base-max "$BASE_MAX" --output out/baseline.json
+      - name: Publish reproducible data
+        uses: actions/upload-artifact@v4
+        with:
+          name: number-theory-enumeration
+          path: out/baseline.json
+          retention-days: 30
+
