@@ -47,3 +47,8 @@
 - **SCREEN-S006-Q1 / NOT_NOVEL/REFUTED AS A TARGET:** quantified all-fundamental-discriminant local-to-specific-class assertion has a classical counterexample at Δ=−23 and p=2; not a new theorem.
 - **SCREEN-S006-Q2 / BACKGROUND/UNCERTAIN EXACT PROOF:** equality of all unramified represented-prime sets implies at most GL₂-class by class-field/Frobenius considerations; closer exact published theorem unread; no distinct novel N1 claim.
 **Original mathematical claims still ZERO; N1 finalists ZERO; STOP_CURRENT_PROGRAMME.**
+
+## S007 — 37-essential recharter (2026-10-09)
+- **BG-S007-01 / BACKGROUND/NOT_NOVEL:** `(37,32)` is the first Kummer irregular pair, `32=37−5`; p=37 is intrinsic, not a convenience. [S007](sessions/S007.md).
+- **EXP-S007-01 / EXACT FINITE/NOT_NOVEL:** `H_4(37)=Σ_{k=1}^{36}k^{-4}` has residue `0 mod37²` and `8214=6·37² mod37³`, proved as an exact arithmetic certificate with independent rational and modular methods; Glaisher's congruence subsumes mod37². [Archive](data/S007_37_exact.json).
+- **SCREEN-S007-02 / NO N1:** existing Kummer unit and 2025 PARI polynomial for a degree-37 unramified extension of Q(ζ37) leave only a possible *new compressed independently verifiable certificate*, not an original existence theorem. **Zero original claims/zero N1 remain.**
