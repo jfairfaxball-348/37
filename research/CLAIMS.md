@@ -24,3 +24,8 @@
 - **EXP-S002-02 / EXPERIMENTAL:** high-valuation rows s>=3 at primes 31/37/41/43: 1/1/1/0, [NA-007](NOVELTY_LEDGER.md); not significant by itself.
 
 **S002 original claims: NONE. No candidate advanced to N1.**
+
+## S003 — exact cubic-character controls, no original mathematical assertion
+- **BG-009 / BACKGROUND, NOT_NOVEL:** Jacobi identities for nontrivial cubic characters, norm `N(J(chi,chi))=p` and `J(chi,bar chi)=-chi(-1)=-1`; switching chi to chi² conjugates the Eisenstein integer. [NA-008](NOVELTY_LEDGER.md).
+- **BG-010 / BACKGROUND, NOT_NOVEL:** classical normalized `4p=L²+27M²`, cubic Gaussian period polynomial, order-three cyclotomic-number tables, primary normalization [NA-009](NOVELTY_LEDGER.md).
+- **EXP-S003-01 / EXPERIMENTAL:** p=31/37/41/43, all residues and fixed probes 2/3/10; 3 split + 1 inert control, 21 tests and full independent integer/cube/class/period oracle PASS. Exact [session](sessions/S003.md), [manifest](data/S003_manifest.json). No theorem, no N1 candidate. Prior two NO SURVIVOR gates unchanged.

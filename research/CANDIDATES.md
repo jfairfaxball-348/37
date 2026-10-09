@@ -16,3 +16,8 @@ There are **zero** active original mathematical candidates. S002 is authorized t
 - DIR-05 **UNTESTED / EXPLORATORY:** cubic characters, exact Eisenstein integer Jacobi sums and splitting at primes p≡1 (mod 3) as a *materially different S003 search*, with p≡2 (mod 3) negative control. Established cubic reciprocity and classical Jacobi evaluations are competing background. No survivor, proof or authorization for N1 at S002 close.
 
 **Zero active original mathematical candidates.**
+
+## S003 close — 2026-10-09
+- **DIR-05 PARKED / NOT_NOVEL:** all exact cubic Jacobi, order-3 cyclotomic table, 4p=L²+27M² and cubic-period outcomes for declared primes are classical. Source screens [NA-008–010](NOVELTY_LEDGER.md) and [S003](sessions/S003.md). No significant distinct quantified N1 proposition identified.
+- **DIR-06 UNTESTED / EXPLORATORY:** proposed materially different S004 additive restricted sumsets/inverse structures in Z/pZ, with classical Cauchy–Davenport/Vosper/Erdős–Heilbronn competition acknowledged. The S004 prompt is a handoff, **not** a finding.
+**Active original candidates: ZERO. S001/S002/S003 all NO SURVIVOR / PIVOT.**
