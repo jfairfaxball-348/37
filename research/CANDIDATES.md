@@ -26,3 +26,10 @@ There are **zero** active original mathematical candidates. S002 is authorized t
 - **DIR-06 PARKED / NOT_NOVEL:** 32560 complete four-point additive records and 234 total within-prime affine classes. Restricted-minimum non-AP cases at k4, five joint statistics and affine multiplicities are routine four-point additive structure, with extant near-minimum/inverse/energy theory. S004 [session](sessions/S004.md), [NA-011–013](NOVELTY_LEDGER.md).
 - **DIR-07 UNTESTED / AUDIT-ONLY S005:** candidate *selection procedure*, not an original candidate: comprehensive programme progress/correction plus gap-first number-theory mechanism screening; potentially demote or park arbitrary 37-specific focus. No preselected theorem, no N1 authority and no calculation in S005.
 **Active original mathematical candidates: ZERO. S001–S004 all NO SURVIVOR / PIVOT.**
+
+## S005 close — mandatory five-session audit, PIVOT
+- **DIR-07 completed AUDIT ONLY:** five-session progress correction rejects continued p=37-target-first invariant collection; NEVER an N1 mathematical candidate.
+- **DIR-08 PARKED / NO VIABLE TARGET:** next-to-maximal zero-sum-free multiplicity stability in (Z/pZ)^2, precise question in NA-014; novelty/truth/current nearest theorems not established.
+- **DIR-09 PARKED / NO VIABLE TARGET:** uniform squarefree integers in prime progressions beyond 2/3+1/57, precise question NA-015; recent 2026 competitors and method barrier leave no valid S006 E1 hypothesis.
+- **DIR-10 UNTESTED / S006 LITERATURE-ONLY:** integral representation obstructions for positive definite binary quadratic/norm forms, selected as a different arithmetic-mechanism *screen*, NOT an endorsed open problem, no proof or compute permission.
+**Zero active original candidate; zero N1 finalists; formal S005 verdict PIVOT.**
