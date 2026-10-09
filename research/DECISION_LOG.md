@@ -15,3 +15,10 @@
 - Preserve 31,37,41,43 controls and negative conclusions; no convenient after-the-fact control replacement and no false statistical independence of repeated residue classes.
 - **Pivot for S002** to genuinely different prime-power ring arithmetic and p-adic order/repunit valuations. Ordinary order-lifting/LTE/Wieferich background is pre-disclosed, not the proposed novel result. S002 must again be bounded, exact, source-screened and free to return NO SURVIVOR.
 - S001 only: S002 prompt written but not executed. No registry/outreach/arXiv/journal action.
+
+## D-002 — 2026-10-09 (S002; NO SURVIVOR / PIVOT)
+- Executed exactly S002 E1 p² order/repunit/cyclotomic-valuation experiment in the predeclared 31/37/41/43 and 2..2000 window; 7,784 independent computational row checks, 14 tests and durable full archive.
+- Every notable feature is explained by established LTE, Hensel simple-root lifting and Fermat quotient arithmetic, including unique exceptional lift, fixed-residue base shifts, and b≡1 (mod p) repunit exception. [NA-005–007](NOVELTY_LEDGER.md) **NOT_NOVEL**; no mathematical theorem or N1 proposition claimed.
+- No p³ holdout because no nonroutine significant hypothesis justified further p-adic confirmation; finite-window high valuations are not a discovery. Preserve S001 negative findings without alteration.
+- **NO SURVIVOR / PIVOT** to cubic characters and exact Jacobi sums in Eisenstein integers for S003 as a new bounded exploratory direction, explicitly acknowledging established cubic-reciprocity competition. Do not execute S003 during S002.
+- No outreach, registry/Palomar, Lean, arXiv, journal or spending.

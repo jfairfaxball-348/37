@@ -15,3 +15,12 @@
 - **BG-005 / BACKGROUND, NOT_NOVEL:** For p∤b the least repunit length equals ord_p(b) unless b≡1 mod p, when it equals p; [NA-003](NOVELTY_LEDGER.md).
 
 **Original claims at S001 close: NONE.** No P0/S001 output is a new theorem.
+
+## S002 — background and experimental assertions only
+- **BG-006 / BACKGROUND, NOT_NOVEL:** odd-prime LTE order lifting: for p∤b, d=ord_p(b), s=v_p(b^d-1), ord_(p^k)(b)=d p^max(0,k-s); [NA-005](NOVELTY_LEDGER.md).
+- **BG-007 / BACKGROUND, NOT_NOVEL:** p-adic repunit valuations, the p|(b-1) exception and p|b exclusion; [NA-006](NOVELTY_LEDGER.md).
+- **BG-008 / BACKGROUND, NOT_NOVEL:** one exceptional p² lift per nonzero residue from Hensel/Teichmüller theory and affine Fermat quotient shifts; [NA-005](NOVELTY_LEDGER.md).
+- **EXP-S002-01 / EXPERIMENTAL:** 7,784 full-window rows and 212 exclusions, full independent recurrence and modular valuations, p² class coverage 930/1332/1640/1806, exceptional unique classes 30/36/40/42. [Full evidence](sessions/S002.md). No claim of statistical independence, general theorem or novelty.
+- **EXP-S002-02 / EXPERIMENTAL:** high-valuation rows s>=3 at primes 31/37/41/43: 1/1/1/0, [NA-007](NOVELTY_LEDGER.md); not significant by itself.
+
+**S002 original claims: NONE. No candidate advanced to N1.**
