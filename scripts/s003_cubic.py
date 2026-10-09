@@ -105,8 +105,8 @@ def examine(p):
         if x and y:
             oracle_counts[idx[x]][idx[y]]+=1
     assert counts == oracle_counts
-    j_counts = pair_sum([tuple(k*v for v in omega_pair(i+j))
-                         for i,row in enumerate(oracle_counts) for j,v in enumerate(row)])
+    j_counts = pair_sum([tuple(count*coefficient for coefficient in omega_pair(i+j))
+                         for i,row in enumerate(oracle_counts) for j,count in enumerate(row)])
     assert j11 == j_counts
     assert j1bar == [-1,0] and norm(j11)==p
     assert sum(map(sum,counts)) == p-2
