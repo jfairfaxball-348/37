@@ -58,3 +58,10 @@
 - **SCREEN-S008-01 / NOT_NOVEL:** balanced-residue exponents in the explicit 2010 Kummer cyclotomic-unit product yield the same 37th-power class; it is algebraic reformulation, not a new first generator. [S008](sessions/S008.md).
 - **SCREEN-S008-02 / NOT ESTABLISHED:** exact 37-adic local `pi^73` witness, non-37th-power finite-field witness and strictly smaller/cheaper baseline comparisons were **not produced**; no experiment, no N1 candidate. Published Gras §4.4 states `h(K)=37`, not independently verified by project.
 **All original mathematical claims NONE; S007 classical harmonic record preserved.**
+
+## S009 — literature-led 37-intrinsic discovery; no original mathematical claim
+- **BG-S009-01 / BACKGROUND / NOT_NOVEL:** Two noncuspidal rational X0(37) points have j=-9317 and j=-162677523113838677; Terao 2026 Table3; original rational-point computation Mazur–Swinnerton-Dyer/Vélu 1974. [S009](sessions/S009.md).
+- **BG-S009-02 / BACKGROUND / NOT_NOVEL:** Najman–Orlić proves genus X0(74)=8, Q-gonality4; a proven degree3 closed point there is P1-isolated, **not necessarily AV-isolated**.
+- **SCREEN-S009-01 / UNCERTAIN:** LMFDB 1225.b2 E=[1,1,1,-8,6], j=-9317, 37-isogeny and cubic first two-torsion; NOT yet independently checked as exact level74 closed-point field.
+- **SCREEN-S009-02 / PROVISIONAL ONLY:** Q37-ISO-74 asks whether the resulting degree3 closed point on X0(74) is AV-isolated; Lee 2025 algorithm and full-curve vs quotient competitors unresolved. **No proof, no certified novelty, no N1.**
+**Total original mathematical claims S001–S009: ZERO.**
