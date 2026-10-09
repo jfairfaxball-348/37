@@ -65,3 +65,6 @@ S004 exact independent replay (Python 3.12 standard library):
 python3 -m scripts.s004_additive --folder out
 python3 -m scripts.s004_validate --folder out --tracked research/data
 ```
+
+## S006 terminal research-method closeout (2026-10-09)
+[S006 literature-only audit](research/sessions/S006.md) examined two exact local/genus/class questions for primitive positive definite binary quadratic forms against **12 primary sources** and found **NO VIABLE TARGET / STOP_CURRENT_PROGRAMME** for the present AI-led source-audit-to-original-theorem search. The -23 genus example is classical; modern form-class/prime-representation results (2012–2025) compete closely. No original theorem, N1 finalist, Lean/Palomar or preprint/journal result exists. S001–S004 remain NO SURVIVOR; S005 was PIVOT/NO VIABLE TARGET. The [terminal S007 handoff](research/NEXT_SESSION.md) requires new explicit **human-led rechartering**; it authorizes no new session. Documentation-only PRs now run quality checks **without automatically running the old bounded enumeration** (that step requires manual dispatch).

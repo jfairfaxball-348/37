@@ -44,9 +44,11 @@ jobs:
           fi
       - name: Independent arithmetic unit tests
         run: python3 -m unittest discover -s tests -v
-      - name: Exact enumeration
+      - name: Exact enumeration (explicit dispatch only)
+        if: github.event_name == 'workflow_dispatch'
         run: python3 scripts/enumerate.py --primes "$PRIMES" --base-min 2 --base-max "$BASE_MAX" --output out/baseline.json
-      - name: Publish reproducible data
+      - name: Publish reproducible data (explicit dispatch only)
+        if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
           name: number-theory-enumeration

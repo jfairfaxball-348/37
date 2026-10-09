@@ -41,3 +41,9 @@
 - **AUDIT-S005-01 (administrative):** S001–S004 gave four negative mathematical gates; 13 contemporaneous novelty-screen identifiers NA-001–013, 0 original theorems, 0 N1 finalists; five-session audit published. Counts and CI are technical provenance, NOT scientific discovery.
 - **SCREEN-S005-01/02 (UNCERTAIN / PARKED):** exact literature-led *questions* about length 2p-3 zero-sum-free multiplicity in (Z/pZ)^2 and uniform squarefree prime-progressions; neither is called open/proved/refuted and neither enters the claims/theorem pipeline. [S005](sessions/S005.md), [NA-014/015](NOVELTY_LEDGER.md).
 **Original claims remain NONE; p=37 only optional example.**
+
+## S006 literature-only terminal gate (2026-10-09)
+- **AUDIT-S006-01 / BACKGROUND:** local primitive representation/genus compatibility is not individual proper-class representation; the Δ=−23 one-genus three-class situation is classical. No project proof or original claim. [S006](sessions/S006.md).
+- **SCREEN-S006-Q1 / NOT_NOVEL/REFUTED AS A TARGET:** quantified all-fundamental-discriminant local-to-specific-class assertion has a classical counterexample at Δ=−23 and p=2; not a new theorem.
+- **SCREEN-S006-Q2 / BACKGROUND/UNCERTAIN EXACT PROOF:** equality of all unramified represented-prime sets implies at most GL₂-class by class-field/Frobenius considerations; closer exact published theorem unread; no distinct novel N1 claim.
+**Original mathematical claims still ZERO; N1 finalists ZERO; STOP_CURRENT_PROGRAMME.**
