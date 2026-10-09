@@ -28,3 +28,10 @@
 - Exact J normalization, chi→chi² conjugation, norm p, J(chi,bar chi)=-1, 4p=L²+27M², period polynomials, p=41 inert behavior and p=37 comparison all explained by established cubic-character theory; [NA-008–010](NOVELTY_LEDGER.md). No nonroutine significant quantified proposition, **NO ORIGINAL CLAIM, NO N1 FINALIST**.
 - **NO SURVIVOR / PIVOT** for S003 only, preserving S001/S002 negative decisions and their archives. S004 is an unexecuted materially different exploration of additive restricted sumsets/inverse structure; no presumption of originality.
 - No contact, paid compute, proof assistant, registry, arXiv or journal activity. Close PR/CI/remote-main checks by observed status only.
+
+## D-004 — 2026-10-09 (S004; NO SURVIVOR / PIVOT)
+- One frozen E1 full-population additive study (p=31/37/41/43, 32560 anchored four-sets, no exclusions) performed on one hosted ≤15 minute computational job with completely independent unordered-pair and direct-four-index oracles. All tests and checks passed; archive manifest and Action IDs in [EXP-004](EXPERIMENT_LEDGER.md).
+- Exactly five coarse sum/restricted/difference/energy metric tuples across controls. Cauchy–Davenport, Vosper, Dias da Silva–Hamidoune, Freiman and Sidon/energy theory dominate; Károlyi inverse excludes k=4, so four-element non-AP restricted minima are not contradictions. All reported counts and orbit phenomena are routine/finite, not an original theorem. [NA-011–013](NOVELTY_LEDGER.md).
+- **NO SURVIVOR / PIVOT** for S004. Preserve S001–S003 NO SURVIVOR decisions, full exact evidence and negative findings. **ZERO original claims, ZERO active N1 candidates.**
+- S005 will conduct mandatory fifth-session comprehensive research-progress/correction audit and a **gap-first, literature-led substantial number-theory target workshop**, not another huge table. Explicitly judge demoting or parking the arbitrary 37 seed; choose meaningful theorem mechanisms before compute. No S005 action during S004.
+- No external contact, spending, Lean, Palomar, arXiv or journal action.

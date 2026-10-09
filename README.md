@@ -53,3 +53,13 @@ The machine-readable output records precise configuration, rows, sample counts, 
 ## S003 exact cubic-character archive and new pivot
 
 The [S003 report](research/sessions/S003.md), [complete deterministic archive](research/data/S003_full.json.gz) and [manifest](research/data/S003_manifest.json) contain exact normalized Jacobi sums in integer Eisenstein coefficients and independently verified cubic Gaussian periods. Hosted Actions [run 37928972106](https://github.com/jfairfaxball-348/37/actions/runs/37928972106) passed all 21 tests and the independent oracle. The [S004 prompt](research/NEXT_SESSION.md) proposes a **different additive-sumset** E1 exploration, not executed in S003.
+
+## S004 complete: additive four-point exhaustive experiment (NO SURVIVOR)
+[S004 report](research/sessions/S004.md), [full unfiltered raw JSON](research/data/S004_full.json), [deterministic gzip](research/data/S004_full.json.gz), [S004 manifest](research/data/S004_manifest.json) and [verbatim input](research/prompts/S004_INPUT.md) document all **32560** anchored sets (primes 31,37,41,43), affine duplicate weights and **five** coarse sumset/restricted/difference/energy profiles. One [hosted run 37931379701](https://github.com/jfairfaxball-348/37/actions/runs/37931379701) passed 26 tests and the full independent four-index/unordered-pair oracle. Classical additive combinatorics accounts for the observations; no novel theorem or N1 candidate was found (**fourth consecutive NO SURVIVOR / PIVOT**). [S005](research/NEXT_SESSION.md) is the mandatory progress audit and literature-led meaningful target search, **not yet executed**.
+
+S004 exact independent replay (Python 3.12 standard library):
+
+```bash
+python3 -m scripts.s004_additive --folder out
+python3 -m scripts.s004_validate --folder out --tracked research/data
+```

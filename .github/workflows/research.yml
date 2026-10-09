@@ -28,11 +28,20 @@ jobs:
       BASE_MAX: ${{ inputs.base_max || 200 }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Structural checks
         run: python3 scripts/check_scaffold.py
+      - name: Committed whitespace/diff integrity
+        run: |
+          git diff --check
+          git show --check --oneline HEAD
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            git diff --check origin/main...HEAD
+          fi
       - name: Independent arithmetic unit tests
         run: python3 -m unittest discover -s tests -v
       - name: Exact enumeration

@@ -21,3 +21,8 @@ There are **zero** active original mathematical candidates. S002 is authorized t
 - **DIR-05 PARKED / NOT_NOVEL:** all exact cubic Jacobi, order-3 cyclotomic table, 4p=L²+27M² and cubic-period outcomes for declared primes are classical. Source screens [NA-008–010](NOVELTY_LEDGER.md) and [S003](sessions/S003.md). No significant distinct quantified N1 proposition identified.
 - **DIR-06 UNTESTED / EXPLORATORY:** proposed materially different S004 additive restricted sumsets/inverse structures in Z/pZ, with classical Cauchy–Davenport/Vosper/Erdős–Heilbronn competition acknowledged. The S004 prompt is a handoff, **not** a finding.
 **Active original candidates: ZERO. S001/S002/S003 all NO SURVIVOR / PIVOT.**
+
+## S004 close — 2026-10-09
+- **DIR-06 PARKED / NOT_NOVEL:** 32560 complete four-point additive records and 234 total within-prime affine classes. Restricted-minimum non-AP cases at k4, five joint statistics and affine multiplicities are routine four-point additive structure, with extant near-minimum/inverse/energy theory. S004 [session](sessions/S004.md), [NA-011–013](NOVELTY_LEDGER.md).
+- **DIR-07 UNTESTED / AUDIT-ONLY S005:** candidate *selection procedure*, not an original candidate: comprehensive programme progress/correction plus gap-first number-theory mechanism screening; potentially demote or park arbitrary 37-specific focus. No preselected theorem, no N1 authority and no calculation in S005.
+**Active original mathematical candidates: ZERO. S001–S004 all NO SURVIVOR / PIVOT.**

@@ -29,3 +29,10 @@
 - **BG-009 / BACKGROUND, NOT_NOVEL:** Jacobi identities for nontrivial cubic characters, norm `N(J(chi,chi))=p` and `J(chi,bar chi)=-chi(-1)=-1`; switching chi to chi² conjugates the Eisenstein integer. [NA-008](NOVELTY_LEDGER.md).
 - **BG-010 / BACKGROUND, NOT_NOVEL:** classical normalized `4p=L²+27M²`, cubic Gaussian period polynomial, order-three cyclotomic-number tables, primary normalization [NA-009](NOVELTY_LEDGER.md).
 - **EXP-S003-01 / EXPERIMENTAL:** p=31/37/41/43, all residues and fixed probes 2/3/10; 3 split + 1 inert control, 21 tests and full independent integer/cube/class/period oracle PASS. Exact [session](sessions/S003.md), [manifest](data/S003_manifest.json). No theorem, no N1 candidate. Prior two NO SURVIVOR gates unchanged.
+
+## S004 — background, complete exact experiment and negative cases
+- **BG-011 / BACKGROUND, NOT_NOVEL:** Cauchy–Davenport gives |A+A|≥7 at |A|=4, p≥31; Vosper/Kemperman classify ordinary equality by AP, with standard hypotheses. [NA-011–012](NOVELTY_LEDGER.md).
+- **BG-012 / BACKGROUND, NOT_NOVEL:** Dias da Silva–Hamidoune gives |A⊕A|≥5 for four distinct elements at these p. The inverse AP-only result under **|A|≥5** does not apply to four-point non-AP parallelograms. [NA-011](NOVELTY_LEDGER.md).
+- **EXP-S004-01 / EXPERIMENTAL:** All 32560 anchored four-subsets across four frozen primes: sumset/restricted/difference/energy/coarse-orbit profiles, independently recomputed exact; five profiles, full [archive](data/S004_full.json.gz) and [manifest](data/S004_manifest.json). No original unbounded theorem or N1.
+- **EXP-S004-02 / EXPERIMENTAL/NEGATIVE:** p=37 A={0,1,3,4} gives restricted size 5 without being AP; at restricted size 6 energy is not unique. Duplicate affine orbits explicitly weighted. 37 does not distinguish a unique extremal profile across controls. [NA-011–013](NOVELTY_LEDGER.md).
+**S004 original claims: NONE; N1 finalist: NONE.**
