@@ -3,17 +3,17 @@
   "project": "37",
   "repository": "jfairfaxball-348/37",
   "date_utc": "2026-10-09",
-  "stage": "P0_LITERATURE_TARGET_AUDIT",
-  "last_completed_session": "S005",
-  "next_session": "S006",
+  "stage": "CLOSED_PENDING_HUMAN_RECHARTER",
+  "last_completed_session": "S006",
+  "next_session": "S007",
   "next_prompt": "research/NEXT_SESSION.md",
   "scientific_result": "NONE",
   "novelty_gate": "NO_VIABLE_TARGET_NO_N1",
   "active_claims": 0,
   "active_candidates": 0,
-  "program_status": "PIVOT_37_CENTRED_METHOD_PARKED_S006_SOURCE_FIRST_ONE_LAST_SCREEN",
-  "allowed_compute": "S006_LITERATURE_ONLY_NO_EXPERIMENT",
+  "program_status": "STOP_CURRENT_PROGRAMME_HUMAN_RECHARTER_REQUIRED",
+  "allowed_compute": "NONE_NO_S007_AUTHORIZED",
   "external_contact": "NOT_AUTHORIZED",
   "external_submissions": "NOT_AUTHORIZED",
-  "progress_audit_due_after_substantive_session": 10
+  "progress_audit_due_after_substantive_session": null
 }

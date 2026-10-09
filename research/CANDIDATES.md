@@ -33,3 +33,7 @@ There are **zero** active original mathematical candidates. S002 is authorized t
 - **DIR-09 PARKED / NO VIABLE TARGET:** uniform squarefree integers in prime progressions beyond 2/3+1/57, precise question NA-015; recent 2026 competitors and method barrier leave no valid S006 E1 hypothesis.
 - **DIR-10 UNTESTED / S006 LITERATURE-ONLY:** integral representation obstructions for positive definite binary quadratic/norm forms, selected as a different arithmetic-mechanism *screen*, NOT an endorsed open problem, no proof or compute permission.
 **Zero active original candidate; zero N1 finalists; formal S005 verdict PIVOT.**
+
+## S006 close — stop gate, 2026-10-09
+- **DIR-10 CLOSED / NO VIABLE TARGET:** two literature-only primitive binary quadratic form / class group screens with 12 unique primary papers; first naive local-to-individual form statement refuted by classical Δ=−23 case, second prime-representation set uniqueness is standard class-field territory with strong 2025 comparators and incomplete exact full-paper access.
+- **No DIR-11 selected, no original candidate or N1 proposal. STOP_CURRENT_PROGRAMME.** Recharter only at human direction; [terminal handoff](NEXT_SESSION.md). S001–S005 historical decisions unchanged.
