@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -30,6 +31,8 @@ jobs:
           python3 scripts/check_scaffold.py
           python3 -m unittest discover -s tests -v
           git diff --check
+          git show --check --oneline HEAD
+          git diff --check origin/main...HEAD
       - name: Predeclared S002 exact level-1-and-2 full-window sweep
         run: python3 -m scripts.s002_enumerate --output out/s002_full.json
       - name: Full independent modular and repunit recurrence oracle
