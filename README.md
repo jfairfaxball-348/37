@@ -22,11 +22,11 @@ For decimal base 10, `111 = 3 × 37`, `Φ₃(10) = 10² + 10 + 1 = 111`, `ord₃
 
 ## S001 exact archive and evidence
 
-Read the [S001 report](research/sessions/S001.md), [checked manifest](research/data/S001_manifest.json) and [durable full JSON archive](research/data/S001_full.json.gz) (gzip, decompress to recover unfiltered source JSON). GitHub Actions [deep run 37921994616](https://github.com/jfairfaxball-348/37/actions/runs/37921994616) validated every output row independently. The current [S002 prompt](research/NEXT_SESSION.md) pivots into prime-power lifting and valuations; classical lifting is not itself a novelty claim.
+Read the [S001 report](research/sessions/S001.md), [checked manifest](research/data/S001_manifest.json) and [durable full JSON archive](research/data/S001_full.json.gz) (gzip, decompress to recover unfiltered source JSON). GitHub Actions [deep run 37921994616](https://github.com/jfairfaxball-348/37/actions/runs/37921994616) validated every output row independently. The S002 prompt is archived in [S002_INPUT](research/prompts/S002_INPUT.md); classical lifting was not a novelty claim.
 
 ## S002 complete prime-power archive and evidence
 
-Read the [S002 report](research/sessions/S002.md), the [independently checked S002 manifest](research/data/S002_manifest.json), and full exact [S002 compressed JSON](research/data/S002_full.json.gz). GitHub Actions [full S002 run 37926530437](https://github.com/jfairfaxball-348/37/actions/runs/37926530437) checked every p-square row independently and uploaded artifact 11613668670. The current [S003 prompt](research/NEXT_SESSION.md) pivots to cubic characters and Jacobi sums; classical character-sum identities are not automatically novel.
+Read the [S002 report](research/sessions/S002.md), the [independently checked S002 manifest](research/data/S002_manifest.json), and full exact [S002 compressed JSON](research/data/S002_full.json.gz). GitHub Actions [full S002 run 37926530437](https://github.com/jfairfaxball-348/37/actions/runs/37926530437) checked every p-square row independently and uploaded artifact 11613668670. The S003 prompt is archived in [S003_INPUT](research/prompts/S003_INPUT.md); the completed cubic-character identities were NOT_NOVEL.
 
 ## Reproduce enumeration
 
@@ -49,3 +49,7 @@ The machine-readable output records precise configuration, rows, sample counts, 
 
 [GitHub Actions research checks](.github/workflows/research.yml) run for PRs/pushes and can be manually dispatched with a larger base bound; outputs are workflow artifacts, not automatically accepted mathematical claims. The repository is the authoritative research record, and every bounded session ends with checked GitHub publication and a standalone copy/paste prompt in `research/NEXT_SESSION.md`.
 
+
+## S003 exact cubic-character archive and new pivot
+
+The [S003 report](research/sessions/S003.md), [complete deterministic archive](research/data/S003_full.json.gz) and [manifest](research/data/S003_manifest.json) contain exact normalized Jacobi sums in integer Eisenstein coefficients and independently verified cubic Gaussian periods. Hosted Actions [run 37928972106](https://github.com/jfairfaxball-348/37/actions/runs/37928972106) passed all 21 tests and the independent oracle. The [S004 prompt](research/NEXT_SESSION.md) proposes a **different additive-sumset** E1 exploration, not executed in S003.

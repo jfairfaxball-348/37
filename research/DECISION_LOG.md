@@ -22,3 +22,9 @@
 - No p³ holdout because no nonroutine significant hypothesis justified further p-adic confirmation; finite-window high valuations are not a discovery. Preserve S001 negative findings without alteration.
 - **NO SURVIVOR / PIVOT** to cubic characters and exact Jacobi sums in Eisenstein integers for S003 as a new bounded exploratory direction, explicitly acknowledging established cubic-reciprocity competition. Do not execute S003 during S002.
 - No outreach, registry/Palomar, Lean, arXiv, journal or spending.
+
+## D-003 — 2026-10-09 (S003; NO SURVIVOR / PIVOT)
+- One frozen E1 exploration of cubic characters, Eisenstein Jacobi sums, cyclotomic classes and Gaussian cubic periods, p=31/37/41/43. Corrected the separately documented independent-oracle counting implementation bug, did not adapt mathematical inputs; complete subsequent hosted exact run/21 tests PASS.
+- Exact J normalization, chi→chi² conjugation, norm p, J(chi,bar chi)=-1, 4p=L²+27M², period polynomials, p=41 inert behavior and p=37 comparison all explained by established cubic-character theory; [NA-008–010](NOVELTY_LEDGER.md). No nonroutine significant quantified proposition, **NO ORIGINAL CLAIM, NO N1 FINALIST**.
+- **NO SURVIVOR / PIVOT** for S003 only, preserving S001/S002 negative decisions and their archives. S004 is an unexecuted materially different exploration of additive restricted sumsets/inverse structure; no presumption of originality.
+- No contact, paid compute, proof assistant, registry, arXiv or journal activity. Close PR/CI/remote-main checks by observed status only.
