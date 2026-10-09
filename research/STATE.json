@@ -3,21 +3,19 @@
   "project": "37",
   "repository": "jfairfaxball-348/37",
   "date_utc": "2026-10-09",
-  "stage": "S009_COMPLETE_PROVISIONAL_37_ISOLATION_TARGET",
-  "last_completed_session": "S009",
-  "next_session": "S010",
+  "stage": "S010_COMPLETE_NOT_NOVEL_HUMAN_DECISION",
+  "last_completed_session": "S010",
+  "next_session": "S011",
   "next_prompt": "research/NEXT_SESSION.md",
   "scientific_result": "NONE",
-  "novelty_gate": "PROVISIONAL_TARGET_FOR_FEASIBILITY_N1_NOT_PASSED",
+  "novelty_gate": "Q37-ISO-74_NOT_NOVEL_N1_NOT_PASSED",
   "active_claims": 0,
-  "active_candidates": 1,
-  "active_candidate_ids": [
-    "Q37-ISO-74"
-  ],
-  "program_status": "ONE_37_INTRINSIC_PROVISIONAL_TARGET_FEASIBILITY_ONLY_PENDING_SEPARATE_S010_REQUEST",
-  "allowed_compute": "NONE_IN_S009; S010_ONLY_IF_NEW_EXPLICIT_SESSION_REQUEST",
+  "active_candidates": 0,
+  "active_candidate_ids": [],
+  "program_status": "STOP_CURRENT_PROGRAMME_HUMAN_DECISION_REQUIRED",
+  "allowed_compute": "NONE_PENDING_HUMAN_RECHARTER",
   "external_contact": "NOT_AUTHORIZED",
   "external_submissions": "NOT_AUTHORIZED",
-  "progress_audit_due_after_substantive_session": 10,
-  "next_session_authorization": "NOT_EXECUTED_NOT_AUTOMATIC"
+  "progress_audit_due_after_substantive_session": 15,
+  "next_session_authorization": "NOT_AUTHORIZED_HUMAN_DECISION_GATE_ONLY"
 }

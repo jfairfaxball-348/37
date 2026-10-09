@@ -65,3 +65,7 @@
 - **SCREEN-S009-01 / UNCERTAIN:** LMFDB 1225.b2 E=[1,1,1,-8,6], j=-9317, 37-isogeny and cubic first two-torsion; NOT yet independently checked as exact level74 closed-point field.
 - **SCREEN-S009-02 / PROVISIONAL ONLY:** Q37-ISO-74 asks whether the resulting degree3 closed point on X0(74) is AV-isolated; Lee 2025 algorithm and full-curve vs quotient competitors unresolved. **No proof, no certified novelty, no N1.**
 **Total original mathematical claims S001–S009: ZERO.**
+
+## S010 — classical full-curve cubic result, no new claims
+- **BG-S010-01 / NOT_NOVEL:** Jeon 2021 JNT Theorem 0.1 and Lemma 2.2 imply X0(74) has only finitely many cubic points; therefore any genuine degree-three x there is P1- AND AV-isolated (conditional on its degree). Existing general classification, not a new project theorem. [S010](sessions/S010.md).
+- **SCREEN-S010-01 / NOT_NOVEL:** Q37-ISO-74 closed. Proposed x's exact cubic moduli field remains UNCERTAIN/NOT INDEPENDENTLY CERTIFIED because prior-art kill happened before Phase B. Original mathematics **NONE**; N1 **ZERO**.
