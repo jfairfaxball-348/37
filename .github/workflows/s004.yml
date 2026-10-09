@@ -1,0 +1,57 @@
+name: S004 ONE frozen four-element additive enumeration
+on:
+  push:
+    branches: [research/s004-additive-four]
+permissions:
+  contents: write
+jobs:
+  s004-exact:
+    # Only the preregistration freeze commit can execute the one research job.
+    if: startsWith(github.event.head_commit.message, 'freeze(s004):')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin source environment and execution identity
+        run: |
+          echo "run=$GITHUB_RUN_ID source_sha=$GITHUB_SHA job=$GITHUB_JOB os=$RUNNER_OS arch=$RUNNER_ARCH"
+          python3 --version
+          git rev-parse HEAD
+      - name: Required complete checks and links
+        run: |
+          python3 scripts/check_scaffold.py
+          python3 -m unittest discover -s tests -v
+          git diff --check
+          git show --check --oneline HEAD
+          git diff --check origin/main...HEAD
+      - name: Run ONE 15-minute frozen finite exhaustive research computation
+        run: python3 -m scripts.s004_additive --folder out
+      - name: Completely independent direct four-index and unordered-pair replay
+        run: |
+          python3 -m scripts.s004_validate --folder out
+          sha256sum out/s004_full.json out/s004_full.json.gz out/s004_manifest.json
+      - name: Commit complete raw compressed archive and manifest to research branch
+        run: |
+          cp out/s004_full.json research/data/S004_full.json
+          cp out/s004_full.json.gz research/data/S004_full.json.gz
+          cp out/s004_manifest.json research/data/S004_manifest.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/data/S004_full.json research/data/S004_full.json.gz research/data/S004_manifest.json
+          git commit -m "data(s004): preserve full verified additive statistics"
+          git push
+      - name: Upload full raw gzip and manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: s004-additive-exact
+          path: |
+            out/s004_full.json
+            out/s004_full.json.gz
+            out/s004_manifest.json
+          retention-days: 90
