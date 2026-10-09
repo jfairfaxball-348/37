@@ -19,4 +19,3 @@ The standing human research direction still demands: **"Explore classical number
 If no choice is provided, return HUMAN_DECISION_REQUIRED, without source-only research pivots or Actions compute. Even if the user chooses B or C, draft/agree the new bounded S011 instruction first; do not treat this handoff itself as authorization. For later expressly authorized work, archive its input verbatim before replacing NEXT, preserve negative history, run checked GitHub branch/PR/actual green Actions/merge/main verification, and end with a full next prompt.
 
 No paid compute, correspondence/researcher outreach, mass enumeration, external submission, Lean, Palomar, arXiv, paper or journal activity without separate permission. **STOP. DO NOT EXECUTE S011.**
-
